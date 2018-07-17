@@ -1,0 +1,37 @@
+.table {
+  text-align: center;
+}
+
+.calendarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.calendarDay {
+  display: flex;
+  border: 1px solid gray;
+  padding: 20px;
+  width: calc(100% / 7);
+  height: 100px;
+  cursor: pointer;
+}
+
+.active {
+  position: relative;
+}
+
+.active:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid green;
+  border-right: 20px solid green;
+}
+
+.edit-btn {
+  margin-right: 1rem;
+}
